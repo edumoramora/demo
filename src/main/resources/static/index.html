@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi primera conexión</title>
+</head>
+<body>
+  <h1>Mi lista</h1>
+
+  <h3>Ver la lista (GET)</h3>
+  <button onclick="obtenerDatos()">Ver lista</button>
+  <ul id="listaDatos"></ul>
+
+  <h3>Añadir (POST)</h3>
+  <input type="text" id="inputCrearNombre" placeholder="Nombre">
+  <button onclick="publicarDato()">Guardar</button>
+
+  <h3>Modificar (PUT)</h3>
+  <input type="number" id="inputModificarId" placeholder="ID">
+  <input type="text" id="inputModificarNombre" placeholder="Nuevo nombre">
+  <button onclick="modificarDato()">Actualizar</button>
+
+  <h3>Borrar (DELETE)</h3>
+  <input type="number" id="inputEliminarId" placeholder="ID">
+  <button onclick="eliminarDato()">Borrar</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
